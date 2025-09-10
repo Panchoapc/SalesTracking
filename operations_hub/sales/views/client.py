@@ -1,6 +1,6 @@
 from rest_framework import permissions, viewsets
-from serializers import ClientSerializer
-from models import Client
+from sales.serializers import ClientSerializer
+from sales.models import Client
 
 class ClientViewSet(viewsets.ModelViewSet):
     """

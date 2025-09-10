@@ -1,6 +1,6 @@
 from rest_framework import permissions, viewsets
-from serializers import OrderProductSerializer
-from models import OrderProduct
+from sales.serializers import OrderProductSerializer
+from sales.models import OrderProduct
 
 class OrderProductViewSet(viewsets.ModelViewSet):
     """

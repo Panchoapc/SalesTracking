@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import SalesOrder
+from sales.models import SalesOrder
 
 class SalesOrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

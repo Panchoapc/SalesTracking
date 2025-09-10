@@ -1,15 +1,15 @@
 from django.db import models
 
 BRANDS = ["Pepito",
-          "Cornet",
+          "LaTocorne",
           "Cuneta"]
 
-PRODUCT_TYPE = ["Pepito",
-                "Cornet",
-                "Cuneta"]
+PRODUCT_TYPE = ["Super8",
+                "Tuyo",
+                "Centella"]
 
 BRAND_CHOICES = [(marca, marca) for marca in BRANDS]
-PRODUCT_CHOICES = [(marca, marca) for marca in BRANDS]
+PRODUCT_CHOICES = [(marca, marca) for marca in PRODUCT_TYPE]
 
 class Product(models.Model):
     brand = models.CharField(choices = BRAND_CHOICES, default=BRANDS[0])
